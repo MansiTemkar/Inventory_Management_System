@@ -42,10 +42,18 @@ This is a **Spring Boot backend application** for managing inventory, including 
 Update `src/main/resources/application.properties` with your MySQL credentials:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/inventory_db?createDatabaseIfNotExist=true
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/inventory_management_system?createDatabaseIfNotExist=true
 spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 server.port=8080
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
+
+
+
+
+
+
